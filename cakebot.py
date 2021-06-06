@@ -43,7 +43,7 @@ nonce = web3.eth.get_transaction_count(sender_address)
 start = time.time()
 
 pancakeswap2_txn = contract.functions.swapExactETHForTokens(
-10000000000, # here setup the minimum destination token you want to have, you can do some math, or you can put a 0 if you don't want to care
+10000000000, # set to 0, or specify minimum amount of tokeny you want to receive - consider decimals!!!
 [spend,tokenToBuy],
 sender_address,
 (int(time.time()) + 10000)
