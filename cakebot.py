@@ -34,10 +34,6 @@ spend = web3.toChecksumAddress("0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c")  #w
 contract = web3.eth.contract(address=panRouterContractAddress, abi=panabi)
  
 
-#print(web3.toWei('0.02','ether'))
-
-
-
 nonce = web3.eth.get_transaction_count(sender_address)
  
 start = time.time()
